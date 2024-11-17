@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Manage Word Sets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="admin-container">
+        <h1>Admin Panel - Manage Word Sets</h1>
+
+        <!-- Form to add new word sets manually -->
+        <form id="wordSetForm">
+            <label for="setName">Set Name:</label>
+            <input type="text" id="setName" required placeholder="e.g., apple">
+            <label for="words">Words (comma-separated):</label>
+            <input type="text" id="words" required placeholder="e.g., ape, lap, pal, app, leap">
+            <button type="submit">Add Word Set</button>
+        </form>
+
+        <!-- File input for CSV upload -->
+        <h2>Or Upload Word Sets via CSV</h2>
+        <input type="file" id="csvFileInput" accept=".csv">
+        <button onclick="uploadCSV()">Upload CSV</button>
+
+        <!-- Display existing word sets with edit and delete options -->
+        <h2>Existing Word Sets</h2>
+        <ul id="wordSetList"></ul>
+
+        <!-- Edit form for a selected word set -->
+        <div id="editFormContainer" style="display: none;">
+            <h2>Edit Word Set</h2>
+            <form id="editWordSetForm">
+                <label for="editWords">Edit Words (comma-separated):</label>
+                <input type="text" id="editWords" required>
+                <button type="submit">Save Changes</button>
+            </form>
+            <button onclick="cancelEdit()">Cancel</button>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

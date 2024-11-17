@@ -1,0 +1,101 @@
+/* Body and Background Styling */
+body {
+    font-family: 'Comic Sans MS', Arial, sans-serif;
+    background: linear-gradient(180deg, #0b3d91, #000428);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Game Container */
+.game-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Header styling */
+h1 {
+    font-size: 2.5em;
+    color: #ffeb3b;
+    text-shadow: 0 0 10px #ffeb3b, 0 0 20px #ffc107;
+    margin: 10px 0;
+}
+
+/* Circular Letter Container Styling */
+.letter-container {
+    position: relative;
+    width: 250px; /* Adjust size as needed */
+    height: 250px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letter-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    color: #03a9f4;
+    background: #333;
+    border: 2px solid #03a9f4;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px; /* Centers the text vertically */
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+/* Hover Effect */
+.letter-button:hover {
+    transform: scale(1.2);
+}
+
+/* Arrange up to 8 letters in a circular layout */
+.letter-button:nth-child(1) { transform: rotate(0deg) translate(100px) rotate(0deg); }
+.letter-button:nth-child(2) { transform: rotate(45deg) translate(100px) rotate(-45deg); }
+.letter-button:nth-child(3) { transform: rotate(90deg) translate(100px) rotate(-90deg); }
+.letter-button:nth-child(4) { transform: rotate(135deg) translate(100px) rotate(-135deg); }
+.letter-button:nth-child(5) { transform: rotate(180deg) translate(100px) rotate(-180deg); }
+.letter-button:nth-child(6) { transform: rotate(225deg) translate(100px) rotate(-225deg); }
+.letter-button:nth-child(7) { transform: rotate(270deg) translate(100px) rotate(-270deg); }
+.letter-button:nth-child(8) { transform: rotate(315deg) translate(100px) rotate(-315deg); }
+
+/* Word Forming Area */
+.word-forming-area {
+    font-size: 1.5em;
+    color: #fff;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Formed word display */
+#formedWord {
+    font-size: 2em; /* Increase font size for visibility */
+    font-weight: bold;
+    color: #ffeb3b;
+    text-shadow: 0 0 10px #ffeb3b;
+    margin-bottom: 10px; /* Add space between the word and the buttons */
+}
+
+/* Action buttons for "Launch" and "Clear" */
+.action-button {
+    padding: 10px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    margin: 5px; /* Adjust spacing for button layout */
+    cursor: pointer;
+   

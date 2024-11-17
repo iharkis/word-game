@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Word Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🚀 Space Word Adventure 🚀</h1>
+
+        <!-- Display letters as clickable buttons -->
+        <div id="letters" class="letter-container"></div>
+
+        <!-- Display selected letters as the player "forms" their word -->
+        <div class="word-forming-area">
+            <span id="formedWord"> </span>
+            <button class="action-button" onclick="submitGuess()">🚀 Launch Word</button>
+            <button class="action-button" onclick="clearWord()">❌ Clear</button>
+        </div>
+
+        <!-- Animated feedback for correct/incorrect guesses -->
+        <div id="feedback" class="feedback"></div>
+
+        <!-- Progress and score displayed in a playful way -->
+        <div id="progress">
+            <div>Words Found: <span id="foundCount">0</span> / <span id="totalCount"></span></div>
+            <div>Score: <span id="score">0</span></div>
+        </div>
+
+        <!-- Correct words list styled as found planets -->
+        <div id="correctWords">
+            <h2>Discovered Planets:</h2>
+            <ul id="wordList"></ul>
+        </div>
+    </div>
+
+    <!-- Include the JavaScript file -->
+    <script src="game.js"></script>
+</body>
+</html>
