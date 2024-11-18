@@ -1,4 +1,27 @@
 {
-  "apple": ["ape", "lap", "pal", "app", "leap"],
-  "stone": ["one", "ton", "not", "set", "note"]
+  "HOEMP": ["home", "hope", "poem", "hoe"],
+  "RAKTE": ["rate", "take", "tear", "rake", "eat"],
+  "SLIPE": ["slip", "pile", "lies", "sip", "lip"],
+  "CRANE": ["care", "near", "race", "acre", "arc"],
+  "DROPE": ["rode", "rope", "dope", "pod", "red"],
+  "FLITE": ["life", "file", "fit", "tie"],
+  "SLAME": ["same", "seal", "male", "sale"],
+  "GRIPE": ["grip", "ripe", "pie", "peg", "pig"],
+  "BLATE": ["able", "beat", "belt", "tab", "tea"],
+  "DUZLE": ["duel", "led", "due", "zed", "led"],
+  "WORPE": ["power", "row", "rope", "owe"],
+  "CLAKE": ["lake", "cake", "lack", "ace"],
+  "JLOPE": ["pole", "leap"],
+  "BRUME": ["rub", "bum", "rum",]
+  "DAKEN": ["dean", "den", "and", "end", "ken"],
+  "PLEAG": ["page", "leap", "gap", "lap", "peg"],
+  "QUORE": ["core", "roe", "ore", "our", "cue"],
+  "STIPE": ["site", "step", "pit", "set", "tie"],
+  "FRONE": ["tone", "one", "ore", "for", "nor"],
+  "CLAPE": ["cape", "leap", "pal", "lap", "ace"],
+  "GRANE": ["gear", "near", "rage", "ran", "ear"],
+  "SPAKE": ["peak", "ask", "sea", "ape", "peas"],
+  "BLIRE": ["brie", "rib", "lie", "ire"]
+  "DUWEL": ["dew", "wed", "due", "led", "we"],
+  "MOJAE": ["jam", "joe", "moe", "me", "am"]
 }
